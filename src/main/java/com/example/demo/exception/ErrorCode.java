@@ -5,7 +5,8 @@ public enum ErrorCode {
     UNCATEGORIZED_EXCEPTION(9999,"Uncategorized Error"),
     USERNAME_INVALID(1003,"Username must be at least 3 characters"),
     PASSWORD_INVALID(1004,"Password must be at least 8 characters"),
-    INVALID_KEY(1005,"Invalid message key");
+    INVALID_KEY(1005,"Invalid message key"),
+    USER_NOT_EXISTED(1006,"USER_NOT_EXISTED");
     ErrorCode(int code, String message) {
         this.code = code;
         this.message = message;
